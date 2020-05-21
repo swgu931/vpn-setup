@@ -1,0 +1,54 @@
+Thu May  7 14:18:02 2020 library versions: OpenSSL 1.1.1  11 Sep 2018, LZO 2.08
+Thu May  7 14:18:02 2020 Outgoing Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Thu May  7 14:18:02 2020 Incoming Control Channel Authentication: Using 256 bit message hash 'SHA256' for HMAC authentication
+Thu May  7 14:18:02 2020 TCP/UDP: Preserving recently used remote address: [AF_INET]112.220.105.114:443
+Thu May  7 14:18:02 2020 Socket Buffers: R=[131072->131072] S=[16384->16384]
+Thu May  7 14:18:02 2020 Attempting to establish TCP connection with [AF_INET]112.220.105.114:443 [nonblock]
+Thu May  7 14:18:03 2020 TCP connection established with [AF_INET]112.220.105.114:443
+Thu May  7 14:18:03 2020 TCP_CLIENT link local: (not bound)
+Thu May  7 14:18:03 2020 TCP_CLIENT link remote: [AF_INET]112.220.105.114:443
+Thu May  7 14:18:03 2020 NOTE: UID/GID downgrade will be delayed because of --client, --pull, or --up-delay
+Thu May  7 14:18:03 2020 TLS: Initial packet from [AF_INET]112.220.105.114:443, sid=70d9bb71 ed42e22e
+Thu May  7 14:18:04 2020 VERIFY OK: depth=1, CN=Easy-RSA CA
+Thu May  7 14:18:04 2020 VERIFY KU OK
+Thu May  7 14:18:04 2020 Validating certificate extended key usage
+Thu May  7 14:18:04 2020 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Thu May  7 14:18:04 2020 VERIFY EKU OK
+Thu May  7 14:18:04 2020 VERIFY OK: depth=0, CN=vpn-host
+Thu May  7 14:18:04 2020 Control Channel: TLSv1.3, cipher TLSv1.3 TLS_AES_256_GCM_SHA384, 2048 bit RSA
+Thu May  7 14:18:04 2020 [vpn-host] Peer Connection Initiated with [AF_INET]112.220.105.114:443
+Thu May  7 14:18:05 2020 SENT CONTROL [vpn-host]: 'PUSH_REQUEST' (status=1)
+Thu May  7 14:18:05 2020 PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,dhcp-option DNS 208.67.222.222,dhcp-option DNS 208.67.220.220,route 10.8.0.1,topology net30,ping 10,ping-restart 120,ifconfig 10.8.0.6 10.8.0.5,peer-id 0,cipher AES-256-GCM'
+Thu May  7 14:18:05 2020 OPTIONS IMPORT: timers and/or timeouts modified
+Thu May  7 14:18:05 2020 OPTIONS IMPORT: --ifconfig/up options modified
+Thu May  7 14:18:05 2020 OPTIONS IMPORT: route options modified
+Thu May  7 14:18:05 2020 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Thu May  7 14:18:05 2020 OPTIONS IMPORT: peer-id set
+Thu May  7 14:18:05 2020 OPTIONS IMPORT: adjusting link_mtu to 1626
+Thu May  7 14:18:05 2020 OPTIONS IMPORT: data channel crypto options modified
+Thu May  7 14:18:05 2020 Data Channel: using negotiated cipher 'AES-256-GCM'
+Thu May  7 14:18:05 2020 Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Thu May  7 14:18:05 2020 Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+Thu May  7 14:18:05 2020 ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=enx0c5b8f279a64 HWADDR=0c:5b:8f:27:9a:64
+Thu May  7 14:18:05 2020 TUN/TAP device tun0 opened
+Thu May  7 14:18:05 2020 TUN/TAP TX queue length set to 100
+Thu May  7 14:18:05 2020 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Thu May  7 14:18:05 2020 /sbin/ip link set dev tun0 up mtu 1500
+Thu May  7 14:18:05 2020 /sbin/ip addr add dev tun0 local 10.8.0.6 peer 10.8.0.5
+Thu May  7 14:18:05 2020 /sbin/ip route add 112.220.105.114/32 via 192.168.0.1
+Thu May  7 14:18:05 2020 /sbin/ip route add 0.0.0.0/1 via 10.8.0.5
+Thu May  7 14:18:05 2020 /sbin/ip route add 128.0.0.0/1 via 10.8.0.5
+Thu May  7 14:18:05 2020 /sbin/ip route add 10.8.0.1/32 via 10.8.0.5
+Thu May  7 14:18:05 2020 GID set to nogroup
+Thu May  7 14:18:05 2020 UID set to nobody
+Thu May  7 14:18:05 2020 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+Thu May  7 14:18:05 2020 Initialization Sequence Completed
+Thu May  7 14:56:47 2020 [vpn-host] Inactivity timeout (--ping-restart), restarting
+Thu May  7 14:56:47 2020 SIGUSR1[soft,ping-restart] received, process restarting
+Thu May  7 14:56:47 2020 Restart pause, 5 second(s)
+Thu May  7 14:56:52 2020 TCP/UDP: Preserving recently used remote address: [AF_INET]112.220.105.114:443
+Thu May  7 14:56:52 2020 Socket Buffers: R=[131072->131072] S=[16384->16384]
+Thu May  7 14:56:52 2020 Attempting to establish TCP connection with [AF_INET]112.220.105.114:443 [nonblock]
+^Z
+[2]+  Stopped                 sudo openvpn --config vpn-cr.ovpn
+swevernote@swever-note:~/openvpn-client$ ^C
