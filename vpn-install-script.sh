@@ -13,11 +13,11 @@ cp vars.example vars
 vim vars
 ---
 set_var EASYRSA_REQ_COUNTRY    "KR"
-set_var EASYRSA_REQ_PROVINCE   "SEOUL"t
+set_var EASYRSA_REQ_PROVINCE   "SEOUL"
 set_var EASYRSA_REQ_CITY       "SEOUL"
-set_var EASYRSA_REQ_ORG        "LG Electronics"
-set_var EASYRSA_REQ_EMAIL      "sewan.gu@lge.com"
-set_var EASYRSA_REQ_OU         "Cloud Robotics Task"
+set_var EASYRSA_REQ_ORG        "XXxxxx"
+set_var EASYRSA_REQ_EMAIL      "xxxxxx@xxx.com"
+set_var EASYRSA_REQ_OU         "xxxxxxxx"
 ---
 
 
