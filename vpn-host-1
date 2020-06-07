@@ -1,6 +1,0 @@
-# Execution Docker
-#!/bin/bash
-
-docker run --rm -itd \
---hostname vpn-host-1 \
---net host \
